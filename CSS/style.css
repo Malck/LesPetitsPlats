@@ -84,7 +84,9 @@ div#dropdown-menus-3 {
 }
 
 /* ************************************* RECIPES / LES RECETTES */
-
+.hidden{
+    display: none;
+}
 main#recipes-page {
     padding-top: 20px;
     display: flex;
