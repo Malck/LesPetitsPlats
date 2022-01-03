@@ -12,6 +12,26 @@ class displayRecipes {
         });
     }
 
+    addElements(recipe) {
+        let ingredientinfos = "";
+
+        recipe.ingredients.forEach((ingredient) => {
+
+            if (ingredient.quantity) {
+
+                if (ingredient.unit && ingredient.quantity) {
+                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong> : ${ingredient.quantity} ${ingredient.unit}</li>`;
+                } else {
+                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong> : ${ingredient.quantity}</li>`;
+                }
+            } else {
+                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong></li>`;
+            }
+        });
+
+        return this.createRecipeElement(recipe, ingredientinfos);
+    }
+
     createRecipeElement(recipe, ingredientinfos) {
         this.recipesPage.insertAdjacentHTML(
           //"manqueUnlementApparementIci", 'beforeBegin', 'afterBegin', 'beforeEnd', or 'afterEnd'
@@ -36,26 +56,6 @@ class displayRecipes {
             </article>
             `
         );
-    }
-
-    addElements(recipe) {
-        let ingredientinfos = "";
-
-        recipe.ingredients.forEach((ingredient) => {
-
-            if (ingredient.quantity) {
-
-                if (ingredient.unit && ingredient.quantity) {
-                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong> : ${ingredient.quantity} ${ingredient.unit}</li>`;
-                } else {
-                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong> : ${ingredient.quantity}</li>`;
-                }
-            } else {
-                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong></li>`;
-            }
-        });
-
-        return this.createRecipeElement(recipe, ingredientinfos);
     }
 
 }

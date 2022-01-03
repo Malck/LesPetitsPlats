@@ -1,8 +1,11 @@
 import {recipes} from "../JS/dataRecipes.js";
+import { MainSearchFactory } from "./algo.js";
 
 import { displayRecipes } from "./displayRecipes.js";
 
 new displayRecipes();
+
+new MainSearchFactory();
 
 
 
