@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <script type="module" src="../JS/main.js"></script>
     <script type="module" src="../JS/dataRecipes.js"></script>
-    <script type="module" src="../JS/algo.js"></script>
-
+    <script type="module" src="../JS/algo.js" ></script>
+    <script type="module" src="../JS/algo2.js" ></script>
+    <script type="module" src="../JS/tags.js" ></script>
 
 </head>
 <body>
@@ -31,21 +32,36 @@
     <i class="fas fa-search"></i>
   </nav>
 
+  <div id="tagselect">
+    <ul class="choosenTag"> 
+      <!-- Fill avec les tags selectionnés -->
+    </ul>
+  </div>
+
   <div id="dropdown-menus">
 
     <div id="dropdown-menus-1">
       <p>Ingredients</p>
       <i class="fas fa-chevron-down"></i>
     </div>
+    <div id="dropdown-menus-1-open">
+
+    </div>
 
     <div id="dropdown-menus-2">
-      <p>Appareil</p>
+      <p>Appareils</p>
       <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="dropdown-menus-2-open">
+
     </div>
 
     <div id="dropdown-menus-3">
       <p>Ustensiles</p>
       <i class="fas fa-chevron-down"></i>
+    </div>
+    <div id="dropdown-menus-3-open">
+
     </div>
 
   </div>
@@ -53,9 +69,6 @@
   <main id="recipes-page">
     <!-- Implementation en Js avec //////////////-->
   </main>
-
-
-
-
+  
 </body>
 </html>

@@ -20,7 +20,7 @@ const recipes = [
       },
       {
         ingredient: "Sucre",
-        quantite: 30,  //////////////////////////////// 
+        quantity: 30,  
         unit: "gr",
       },
       {
@@ -53,7 +53,7 @@ const recipes = [
       },
       {
         ingredient: "Carotte",
-        quantite: 1,                   ////////////////////////////////////
+        quantity: 1,                   
       },
       {
         ingredient: "Citron Vert",
@@ -260,7 +260,7 @@ const recipes = [
     description:
       "Etaler la pâte dans les Moules à tartelette. Faire cuire la pâte 30 minutes. Découper le chocolat en morceau et le faire chauffer, y ajouter la crême liquide, ajouter le beurre et remuer jusqu'à avoir une pâte homogène. Verser la pâte sur les tartelettes. Couper les fraises en 2 et les positionner sur ",
     appliance: "Four",
-    ustensils: ["Moule à tartelettes (6)", "Casserole"],
+    ustensils: ["Moule à tartelettes", "Casserole"],
   },
   {
     id: 8,

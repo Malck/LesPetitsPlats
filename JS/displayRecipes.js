@@ -1,35 +1,14 @@
-import {recipes} from "../JS/dataRecipes.js";
+//import {recipes} from "../JS/dataRecipes.js";
 
 class displayRecipes {
     constructor() {
       this.recipesPage = document.querySelector("#recipes-page");
-      this.addRecipeToMainPage();
     }
 
-    addRecipeToMainPage() {
-        recipes.map((recipe) => {
+    addRecipeToMainPage(handleRecipes) {
+        handleRecipes.map((recipe) => {
           this.addElements(recipe);
         });
-    }
-
-    addElements(recipe) {
-        let ingredientinfos = "";
-
-        recipe.ingredients.forEach((ingredient) => {
-
-            if (ingredient.quantity) {
-
-                if (ingredient.unit && ingredient.quantity) {
-                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong> : ${ingredient.quantity} ${ingredient.unit}</li>`;
-                } else {
-                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong> : ${ingredient.quantity}</li>`;
-                }
-            } else {
-                ingredientinfos += `<li><strong class = 'ingredient'>${ingredient.ingredient}</strong></li>`;
-            }
-        });
-
-        return this.createRecipeElement(recipe, ingredientinfos);
     }
 
     createRecipeElement(recipe, ingredientinfos) {
@@ -37,7 +16,7 @@ class displayRecipes {
           //"manqueUnlementApparementIci", 'beforeBegin', 'afterBegin', 'beforeEnd', or 'afterEnd'
           "beforeEnd",
           `
-            <article tabIndex = "0" class="recipe">
+            <article tabIndex="${recipe.id}" class="recipe">
                    
                 <img class = 'picture' src = "../IMG/${recipe.name}.jpg">
                   
@@ -58,6 +37,48 @@ class displayRecipes {
         );
     }
 
-}
+    addElements(recipe) {
+        let ingredientinfos = "";
+
+        recipe.ingredients.forEach((ingredientX) => {
+
+            if (ingredientX.quantity) {
+
+                if (ingredientX.unit && ingredientX.quantity) {
+                ingredientinfos += `<li><strong class = 'ingredient'>${ingredientX.ingredient}</strong> : ${ingredientX.quantity} ${ingredientX.unit}</li>`;
+                } else {
+                ingredientinfos += `<li><strong class = 'ingredient'>${ingredientX.ingredient}</strong> : ${ingredientX.quantity}</li>`;
+                }
+            } else {
+                ingredientinfos += `<li><strong class = 'ingredient'>${ingredientX.ingredient}</strong></li>`;
+            }
+        });
+
+        return this.createRecipeElement(recipe, ingredientinfos);
+    }
+   
+    
+
+
+} // Fin de la class displayRecipes
 
 export { displayRecipes };
+
+
+/*
+function displayErrorMessage() {
+    let container = document.getElementById("recipes-page");
+    container.insertAdjacentHTML(
+      "afterend",
+      `
+        <p id = "error-message" >Oups...<br>Votre recherche ne correspond à aucun résultat...Vous pouvez chercher "tarte aux pommes", "poisson", etc...</p>`
+    );
+};
+
+let articleFooter = document.querySelectorAll("article");
+let footerValuesNorm = normalizeValues(articleFooter.innerHTML);
+let inputValueNorm = normalizeValues(input);
+
+
+*/
+
