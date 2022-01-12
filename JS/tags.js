@@ -1,7 +1,6 @@
 import {recipes} from "../JS/dataRecipes.js";
 
-import {arrayIngredients,arrayAppareils, arrayUstensils, normalizeValues } from"../JS/algo.js";
-//import {arrayIngredients,arrayAppareils, arrayUstensils, normalizeValues } from"../JS/algo2.js";
+import {arrayIngredients,arrayAppareils, arrayUstensils, normalizeValues } from"../JS/algo2.js";
 
 //Barre de recherche Ingredients
 const searchBarIngredient = document.querySelector(".drop_ingredients input");
