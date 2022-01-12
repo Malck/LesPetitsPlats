@@ -13,7 +13,7 @@ class displayRecipes {
 
     createRecipeElement(recipe, ingredientinfos) {
         this.recipesPage.insertAdjacentHTML(
-          //"manqueUnlementApparementIci", 'beforeBegin', 'afterBegin', 'beforeEnd', or 'afterEnd'
+          // 'beforeBegin', 'afterBegin', 'beforeEnd', or 'afterEnd'
           "beforeEnd",
           `
             <article tabIndex="${recipe.id}" class="recipe">
@@ -64,21 +64,4 @@ class displayRecipes {
 
 export { displayRecipes };
 
-
-/*
-function displayErrorMessage() {
-    let container = document.getElementById("recipes-page");
-    container.insertAdjacentHTML(
-      "afterend",
-      `
-        <p id = "error-message" >Oups...<br>Votre recherche ne correspond à aucun résultat...Vous pouvez chercher "tarte aux pommes", "poisson", etc...</p>`
-    );
-};
-
-let articleFooter = document.querySelectorAll("article");
-let footerValuesNorm = normalizeValues(articleFooter.innerHTML);
-let inputValueNorm = normalizeValues(input);
-
-
-*/
 
