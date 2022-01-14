@@ -99,7 +99,7 @@ const recipes = [
         quantity: 1,
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
       },
     ],
     time: 80,
@@ -324,7 +324,7 @@ const recipes = [
         ingredient: "Vinaigre Balsamique",
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
       },
       {
         ingredient: "Basilic",
@@ -468,7 +468,7 @@ const recipes = [
         unit: "Cuillère à soupe",
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
         quantity: 2,
         unit: "Cuillère à soupe",
       },
@@ -584,7 +584,7 @@ const recipes = [
         unit: "tiges",
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
         quantity: 2,
         unit: "Cuillère à soupe",
       },
@@ -714,7 +714,7 @@ const recipes = [
         unit: "gr",
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
         quantity: 1,
         unit: "Cuillères à soupe",
       },
@@ -933,7 +933,7 @@ const recipes = [
         quantity: 1,
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
       },
       {
         ingredient: "Oignon",
@@ -1042,7 +1042,7 @@ const recipes = [
         quantity: 2,
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
       },
       {
         ingredient: "Paprika",
@@ -1209,7 +1209,7 @@ const recipes = [
         unit: "cl",
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
       },
       {
         ingredient: "Orange",
@@ -1317,7 +1317,7 @@ const recipes = [
         unit: "gr",
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d-olive",
         quantity: 25,
         unit: "cl",
       },
@@ -1752,7 +1752,7 @@ const recipes = [
         quantity: 6,
       },
       {
-        ingredient: "Poudre d'amandes",
+        ingredient: "Poudre d-amandes",
         quantity: 500,
         unit: "gr",
       },
