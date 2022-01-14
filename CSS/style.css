@@ -287,7 +287,10 @@ ul.choosenTag {
 i.far.fa-times-circle {
     cursor: pointer;
 }
-
+div#erreur {
+    align-items: end;
+    display: flex;
+}
 
 /* responsiv */ 
 @media (max-width: 1350px){
