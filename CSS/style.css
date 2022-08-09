@@ -125,7 +125,7 @@ main#recipes-page {
     padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 50px;
+    gap: 10px 58px;
     /*justify-content: space-between;*/
 }
 article.recipe {
@@ -303,7 +303,7 @@ div#erreur {
         font-size: 20px;
     }
     main#recipes-page {
-        gap: 10px 40px;
+        gap: 10px 50px;
     }
     h1.recipe--information_name {
         font-size: 16px;
@@ -375,3 +375,29 @@ div#erreur {
         font-size: 15px;
     }
 }
+
+
+/* Responsive to fix gap with width of input search */ 
+@media (min-width: 1660px){
+    main#recipes-page {    
+        gap: 10px 70px;
+    }
+}
+@media (min-width: 1800px){
+    main#recipes-page {    
+        gap: 10px 80px;
+    }
+}
+@media (min-width: 2060px){
+    main#recipes-page {    
+        gap: 10px 95px;
+    }
+}
+@media (min-width: 2265px){
+    main#recipes-page {    
+        gap: 10px 105px;
+    }
+}
+
+
+
