@@ -220,7 +220,7 @@ function filtreTags(){          // Fonction principal: filtrer les recettes affi
             "beforeEnd",
          `
             <div id="erreur">
-            <p> Oups...<br>Votre recherche ne correspond à aucun résultat..." </p>
+            <p> Oups...<br>Votre recherche ne correspond à aucun résultat...</p>
             </div>
             `
         )    
