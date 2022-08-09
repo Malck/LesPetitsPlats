@@ -18,7 +18,7 @@ class displayRecipes {
           `
             <article tabIndex="${recipe.id}" class="recipe">
                    
-                <img class = 'picture' src = "../IMG/${recipe.name}.jpg">
+                <img class = 'picture' src = "IMG/${recipe.name}.jpg">
                   
                 <footer class="recipe--information">
 
