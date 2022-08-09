@@ -125,7 +125,8 @@ main#recipes-page {
     padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 50px;
+    /*gap: 10px 50px;*/
+    justify-content: space-between;
 }
 article.recipe {
     width: 30%;
